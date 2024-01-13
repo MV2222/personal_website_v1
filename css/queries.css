@@ -1,0 +1,234 @@
+/************************/
+/* 1344px (Laptops) */
+/************************/
+@media (max-width: 84em) {
+  .greet {
+    font-size: 4.4rem;
+  }
+
+  .i-am {
+    font-size: 3.6rem;
+  }
+
+  .name {
+    font-size: 5.2rem;
+  }
+
+  .heading {
+    font-size: 3.6rem;
+  }
+}
+
+/************************/
+/* 1200px (Landscape Tablets) */
+/************************/
+@media (max-width: 75em) {
+  .container,
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .nav-list {
+    gap: 3.2rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/************************/
+/* 944px (Tablets) */
+/************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mobile navigation */
+  .mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .navigation {
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    transform: translateX(0);
+
+    z-index: 999;
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .sections-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .section-name:link,
+  .section-name:visited {
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  .section-contact-nav:link,
+  .section-contact-nav:visited {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+/************************/
+/* 704px (Smaller Tablets) */
+/************************/
+@media (max-width: 44em) {
+  .greet {
+    font-size: 2.4rem;
+  }
+
+  .i-am {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 2.8rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .edu-box {
+    padding: 1.6rem 0;
+  }
+
+  .about-txt {
+    font-size: 1.8rem;
+  }
+
+  .about-hobby {
+    font-size: 1.8rem;
+  }
+
+  .hobby-description {
+    font-size: 1.6rem;
+  }
+
+  .contact-info-link {
+    font-size: 1.8rem;
+  }
+}
+
+/************************/
+/* 544px (Phones) */
+/************************/
+@media (max-width: 34em) {
+  .greet {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .i-am {
+    font-size: 2rem;
+  }
+
+  .name {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+
+  .projects p {
+    font-size: 1.9rem;
+  }
+
+  .edu-box {
+    padding: 1.6rem 0;
+  }
+
+  .grid {
+    row-gap: 2rem;
+  }
+
+  .grid--4-cols,
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .about-txt {
+    font-size: 1.8rem;
+  }
+
+  .about-hobby {
+    font-size: 1.8rem;
+  }
+
+  .hobby-description {
+    font-size: 1.6rem;
+  }
+
+  .hobby-img {
+    margin-bottom: 3.2rem;
+  }
+
+  .hobby-img:nth-child(3) {
+    grid-row: 4;
+  }
+
+  .hobby-img:nth-child(7) {
+    grid-row: 8;
+  }
+
+  .hobby-img:nth-child(11) {
+    grid-row: 12;
+    margin-bottom: 0;
+  }
+
+  .contact-info-link {
+    font-size: 1.6rem;
+  }
+}

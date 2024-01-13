@@ -1,0 +1,389 @@
+/**********************************/
+/* NAVIGATION SECTION */
+/**********************************/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+
+  position: relative;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.sections-list {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.section-name:link,
+.section-name:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #909090;
+
+  transition: all 0.4s;
+}
+
+.section-name:hover,
+.section-name:active {
+  color: #fff;
+}
+
+.section-contact-nav:link,
+.section-contact-nav:visited {
+  padding: 1.2rem 2rem;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  color: black;
+}
+.section-contact-nav:hover,
+.section-contact-nav:active {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* MOBILE NAVIGATION */
+.mobile-nav {
+  border: none;
+  background: none;
+
+  display: none;
+}
+
+.mobile-nav-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATOION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.97);
+  box-shadow: 0 5px 10px #222;
+  z-index: 99;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+/**********************************/
+/* HERO SECTION */
+/**********************************/
+.section-hero {
+  padding: 9.6rem 0;
+  height: 100vh;
+
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.greet {
+  font-size: 5.2rem;
+  transition: all 0.5s;
+}
+
+.greet:hover {
+  letter-spacing: 5px;
+}
+
+.i-am {
+  font-size: 4.4rem;
+}
+
+.name {
+  font-size: 6.2rem;
+  line-height: 1.05;
+  transition: all 0.5s;
+}
+
+.name:hover {
+  letter-spacing: 3px;
+}
+
+/**********************************/
+/* EXPERIENCE SECTION */
+/**********************************/
+.section-experience {
+  padding: 9.6rem 0;
+  background-color: #101010;
+}
+
+.exp-num {
+  font-size: 8.6rem;
+}
+
+.exp-txt {
+  font-size: 2.4rem;
+}
+
+/**********************************/
+/* SKILLS SECTION */
+/**********************************/
+.section-skills {
+  padding: 9.6rem 0;
+  background-color: #131313;
+}
+
+.skills {
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.skill-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.skill-bar {
+  height: 1.2rem;
+  background-color: #131313;
+}
+
+.skill-perc {
+  height: 1.2rem;
+  background-color: #fff;
+
+  position: relative;
+}
+
+.skill-perc::before {
+  content: attr(per);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 0.4rem;
+  background-color: #131313;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+}
+
+/**********************************/
+/* PROJECTS SECTION */
+/**********************************/
+.section-projects {
+  padding: 9.6rem 0;
+  background-color: #101010;
+}
+
+.projects p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.project-box {
+  box-shadow: 0 5px 10px #222;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.project-img-box {
+  overflow: hidden;
+}
+
+.project-img-box img {
+  width: 100%;
+  height: auto;
+
+  transition: all 0.4s;
+}
+
+.project-img-box img:hover {
+  transform: scale(1.3);
+}
+
+.project-details-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0 1.2rem;
+}
+
+.about-project {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.project-link:link,
+.project-link:visited {
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #909090;
+
+  transition: all 0.4s;
+}
+
+.project-link:hover,
+.project-link:active {
+  text-decoration: none;
+  color: #fff;
+}
+/**********************************/
+/* EDUCATION SECTION */
+/**********************************/
+.section-education {
+  padding: 9.6rem 0;
+  background-color: #131313;
+}
+
+.edu-details {
+  box-shadow: 0 5px 10px #222;
+}
+
+.edu-box {
+  padding: 2.4rem 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.edu-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.edu-std {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.edu-year {
+  font-size: 1.6rem;
+}
+
+.edu-mark {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/**********************************/
+/* ABOUT SECTION */
+/**********************************/
+.section-about {
+  padding: 9.6rem 0;
+  background-color: #101010;
+}
+.about-txt {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.about-hobby {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.hobby-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.hobby-img {
+  overflow: hidden;
+}
+.hobby-img img {
+  width: 100%;
+  transition: all 0.4s;
+}
+.hobby-img img:hover {
+  transform: scale(1.2);
+}
+/**********************************/
+/* CONTACT SECTION */
+/**********************************/
+.section-contact {
+  padding: 9.6rem 0;
+  background-color: #131313;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+
+  transition: all 0.4s;
+}
+
+.contact-info:hover {
+  transform: translateX(1.5rem);
+}
+
+.contact-info-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.contact-info-link {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/**********************************/
+/* ASIDE */
+/**********************************/
+.copyright {
+  padding: 0.8rem 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #666;
+}
