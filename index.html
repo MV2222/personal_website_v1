@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="I am Mahadev Prasad Pal, a post graduate who is actively looking for job oppertunities. This a personal website I have built entirely by myself through all the web development knowledge I have gained till now."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon64.png" />
+    <link rel="apple-touch-icon" href="img/favicon180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <title>Mahadev Prasad Pal &mdash; Personal website</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="img/site-logo.png" alt="My website Logo" />
+      </a>
+
+      <nav class="navigation">
+        <ul class="sections-list">
+          <li><a class="section-name" href="#experience">Experience</a></li>
+          <li><a class="section-name" href="#skills">Skills</a></li>
+          <li><a class="section-name" href="#projects">Projects</a></li>
+          <li><a class="section-name" href="#education">Education</a></li>
+          <li><a class="section-name" href="#about">About</a></li>
+          <li>
+            <a class="section-name section-contact-nav" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MOBILE NAVIGATION -->
+      <button class="mobile-nav">
+        <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <p class="greet">Hello World</p>
+          <p class="i-am">I am</p>
+          <p class="name"><strong>Mahadev Prasad Pal</strong></p>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section class="section-experience" id="experience">
+        <div>
+          <h2 class="heading">Experience</h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <p class="exp-num"><strong>0</strong></p>
+          <p class="exp-txt">I am a fresher.</p>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="section-skills" id="skills">
+        <div>
+          <h2 class="heading">Skills</h2>
+        </div>
+
+        <div class="container skills">
+          <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-perc" per="95%" style="max-width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-perc" per="85%" style="max-width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-perc" per="45%" style="max-width: 45%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+              <div class="skill-perc" per="30%" style="max-width: 30%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="section-projects" id="projects">
+        <div>
+          <h2 class="heading">Projects</h2>
+        </div>
+
+        <div class="container projects">
+          <p>Here are few projects I have worked on &darr;</p>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="project-box">
+            <div class="project">
+              <div class="project-img-box">
+                <img
+                  src="img/omnifood-logo.jpg"
+                  alt="Omnifood website logo."
+                  class="project-image"
+                />
+              </div>
+              <div class="project-details-box">
+                <p class="about-project">
+                  Omnifood is an AI-Powered food subscription that will make you
+                  eat healthy again on daily basis. It's tailored to your
+                  personal tastes and nutiotional needs.
+                </p>
+                <a
+                  href="https://omnifood-by-mahadev.netlify.app/"
+                  class="project-link"
+                  >visit site &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section class="section-education" id="education">
+        <div>
+          <h2 class="heading">Education</h2>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="edu-details">
+            <div class="edu-box">
+              <div class="edu-txt">
+                <div class="edu-std">M.Tech (CSE)</div>
+                <div class="edu-year">2021 - 2023</div>
+                <div class="edu-mark">CGPA- 8.30</div>
+              </div>
+              <a href="#" class="btn">View Certificate &rarr;</a>
+            </div>
+          </div>
+
+          <div class="edu-details">
+            <div class="edu-box">
+              <div class="edu-txt">
+                <div class="edu-std">B.Tech (CSE)</div>
+                <div class="edu-year">2017 - 2021</div>
+                <div class="edu-mark">CGPA- 8.03</div>
+              </div>
+              <a href="#" class="btn">View Certificate &rarr;</a>
+            </div>
+          </div>
+
+          <div class="edu-details">
+            <div class="edu-box">
+              <div class="edu-txt">
+                <div class="edu-std">Higher Secondary</div>
+                <div class="edu-year">2015 - 2017</div>
+                <div class="edu-mark">52.83%</div>
+              </div>
+              <a href="#" class="btn">View Certificate &rarr;</a>
+            </div>
+          </div>
+
+          <div class="edu-details">
+            <div class="edu-box">
+              <div class="edu-txt">
+                <div class="edu-std">Secondary</div>
+                <div class="edu-year">2011 - 2015</div>
+                <div class="edu-mark">86.7%</div>
+              </div>
+              <a href="#" class="btn">View Certificate &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="section-about" id="about">
+        <div>
+          <h2 class="heading">About</h2>
+        </div>
+
+        <div class="container">
+          <p class="about-txt">
+            I prefer non-veg to veg, love socialising and watching movies in
+            theatre is a big thumbs up.
+          </p>
+        </div>
+
+        <div class="container">
+          <h2 class="heading-secondary">My hobbies</h2>
+          <p class="about-hobby">
+            Interests and hobbies speak a lot about someone. Below are some of
+            my hobbies I follow to stay invested.
+          </p>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- HOBBY-1 -->
+          <div class="hobby-txt">
+            <h3 class="heading-tertiary">Reading</h3>
+            <p class="hobby-description">
+              Browsing through abundant articles on internet about not only
+              technical information but also info like general knowledge and
+              current affairs helps me stay updated with recent circumstances.
+            </p>
+          </div>
+          <div class="hobby-img">
+            <img
+              src="img/reading.jpg"
+              alt="Reading a web article on mobile phone."
+            />
+          </div>
+
+          <!-- HOBBY-2 -->
+          <div class="hobby-img">
+            <img
+              src="img/photography.jpg"
+              alt="A photo I have taken and edited."
+            />
+          </div>
+          <div class="hobby-txt">
+            <h3 class="heading-tertiary">Photography</h3>
+            <p class="hobby-description">
+              I love photography. I believe our brain is a RAM strong enough to
+              execute complex tasks yet it lacks a ROM to store precious moments
+              and photos can stop time to store it as memory. I won a runners-up
+              title in annual photography contest during my graduation.
+            </p>
+          </div>
+
+          <!-- HOBBY-3 -->
+          <div class="hobby-txt">
+            <h3 class="heading-tertiary">Drawing</h3>
+            <p class="hobby-description">
+              I like pencil sketches. I presume a drawn wall shines more than a
+              blank one. The graphite black on wall and the stains of it on my
+              hands fill my heart with joy. I sketched a lot on the walls of my
+              hostel room during my post graduation.
+            </p>
+          </div>
+          <div class="hobby-img">
+            <img src="img/drawing.jpg" alt="A wall art of batman done by me." />
+          </div>
+
+          <!-- HOBBY-4 -->
+          <div class="hobby-img">
+            <img
+              src="img/writing.jpg"
+              alt="A close-up shot of pen nib while writing."
+            />
+          </div>
+          <div class="hobby-txt">
+            <h3 class="heading-tertiary">Writing</h3>
+            <p class="hobby-description">
+              Redefining my ways of writing helps me introspect myself and it
+              shapes me better each time which I feel proud of. During the COVID
+              pandemic I participated in a writing event and won the second
+              prize.
+            </p>
+          </div>
+
+          <!-- HOBBY-5 -->
+          <div class="hobby-txt">
+            <h3 class="heading-tertiary">Travelling</h3>
+            <p class="hobby-description">
+              According to me some classrooms do not have boundaries. Nature is
+              the best guide one can afford without any cost and get the most
+              precious award for finding self. Travelling places has always
+              helped me a lot in building a calm and peaceful self who stays
+              joyful all the time.
+            </p>
+          </div>
+          <div class="hobby-img">
+            <img
+              src="img/travelling.jpg"
+              alt="A picture of me and my friend on our bike tour."
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="section-contact" id="contact">
+        <div class="container">
+          <h2 class="heading-secondary">Get in touch with me :)</h2>
+          <div class="contact">
+            <div class="contact-info">
+              <ion-icon
+                class="contact-info-icon"
+                name="call-outline"
+              ></ion-icon>
+              <a class="contact-info-link" href="tel:(+91)789-407-5323"
+                >(+91)-789-407-5323</a
+              >
+            </div>
+            <div class="contact-info">
+              <ion-icon
+                class="contact-info-icon"
+                name="mail-outline"
+              ></ion-icon>
+              <a
+                class="contact-info-link"
+                href="mailto:mahadevprasadpal99@gmail.com"
+                >mahadevprasadpal99@gmail.com</a
+              >
+            </div>
+            <div class="contact-info">
+              <ion-icon
+                class="contact-info-icon"
+                name="logo-linkedin"
+              ></ion-icon>
+              <a
+                class="contact-info-link"
+                href="https://www.linkedin.com/in/mahadev-prasad-pal-2499191b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtDtr6qipSPGlJPOJZrXqeQ%3D%3D"
+                >Mahadev Prasad Pal</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <aside class="container">
+      <p class="copyright">
+        Copyright &copy; <span class="year">2024</span> by Mahadev Prasad Pal.
+        All rights reserved.
+      </p>
+    </aside>
+  </body>
+</html>
