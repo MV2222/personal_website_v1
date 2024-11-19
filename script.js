@@ -1,7 +1,6 @@
 // Set current year
 const year = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
-console.log("currentYear");
 year.textContent = currentYear;
 
 // Make mmobile navigation work
@@ -45,7 +44,6 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");

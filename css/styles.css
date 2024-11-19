@@ -275,6 +275,12 @@
 
 .edu-details {
   box-shadow: 0 5px 10px #222;
+
+  transition: all 0.5s;
+}
+
+.edu-details:hover {
+  box-shadow: 0 20px 30px #232323;
 }
 
 .edu-box {
